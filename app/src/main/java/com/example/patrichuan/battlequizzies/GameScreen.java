@@ -77,7 +77,7 @@ public class GameScreen extends ActionBarActivity {
                 // Compruebo si el fragment esta ya creado o no, si no lo esta lo creo
                 if (fragmentPregunta == null) {
                     fragmentPregunta = new GameScreen_Pregunta();
-                    transaction.add(R.id.child_two, fragmentPregunta, "PopUpPregunta");
+                    transaction.add(R.id.main_layout, fragmentPregunta, "PopUpPregunta");
                     transaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
                     transaction.addToBackStack(null);
                 }

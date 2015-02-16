@@ -17,11 +17,7 @@
             android:theme="@style/AppTheme"
             android:screenOrientation="landscape"
             android:noHistory="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".LoginScreen"
@@ -52,6 +48,11 @@
             android:label="@string/title_activity_game_screen"
             android:screenOrientation="landscape"
             android:launchMode="singleInstance">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".ComingSoon"
